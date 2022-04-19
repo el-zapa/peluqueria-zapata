@@ -10,87 +10,85 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="grid-container-trabajos">
-        <!-- GRID CONTAINER -->
-        
-        
-            <div class="grid-head"> 
-                <img src="./img/logo.jpg" alt="logo, peluqueria, sr, sisifo"> 
-                <h1>Sr Sisifo - Salon masculino</h1>
-                <hr>
-            </div>
 
-            <div class="grid-nav"> 
-                <hr>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./salon.html">El Salon</a></li>
-                    <li><a href="./trabajos.html">Trabajos</a></li>
-                    <li><a href="./ubicacion.html">Ubicacion</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>   
-                <hr>
-            </div>
-    
-        <div class="trabajos-realizados">
-    
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./img/nino1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./img/nino2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/nino3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/joven4.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/joven2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/joven3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/adultos1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/adultos2.png" class="d-block w-100" alt="...">
-                    </div>
+    <header>
+        <div class="grid-head"> 
+            <img src="./img/logo.jpg" alt="logo, peluqueria, sr, sisifo"> 
+            <h1>Sr Sisifo - Salon masculino</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">→ </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./salon.html">Salón</a>
+                    <a class="nav-link active" aria-current="page" href="./trabajos.html">Trabajos</a>
+                    <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-
-
-        <div class="grid-footer">
-            <hr>
-            <div>
-                <h3>Redes Sociales</h3>
-                <a href="#"><img src="./img/instagram.jpg" alt="instagram"></a>
-                <a href="#"><img src="./img/faceb.jpg" alt="facebook"></a>
-                <a href="#"><img src="./img/wsp.jpg" alt="whatsapp"></a>
-            </div>
-            <p>2022 - Pablo Zapata - Coderhouse#36545</p>
-        </div>
+    </nav>
+    
         
+    <div class="trabajos-realizados">
+        <h2>Trabajos Realizados</h2>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/nino1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/nino2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/nino3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/joven4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/joven2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/joven3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/adultos1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/adultos2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
+    <footer class="footer">
+        <hr>
+        <div class="foot">
+            <p>Redes Sociales: </p>
+            <a href="#"><img src="./img/instagram.jpg" alt="instagram"></a>
+            <a href="#"><img src="./img/faceb.jpg" alt="facebook"></a>
+            <a href="#"><img src="./img/wsp.jpg" alt="whatsapp"></a>
+        </div>
+        <p>2022 - Pablo Zapata - Coderhouse#36545</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-
-
     
 </body>
 </html>
