@@ -1,0 +1,36 @@
+$background: rgb(172, 172, 172);
+$borde:rgba(68, 68, 68, 0.637);
+
+
+.ubi-main {
+    display: flex;
+    align-items: center;
+    .ubi-texto {
+        padding: 10px 10px;
+        width: 48%;
+        font-size: 1.1rem;
+        background-color: $background;
+        border: 5px solid $borde;
+        border-radius: 20px;   
+    }
+    .ubi-img {
+        width: 48%;
+        img {
+            width: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            &:hover{ filter:grayscale(1);}    
+        }
+    }
+}
+
+.mapa {
+    margin: 30px 20px;
+    .mapa-if{
+        border: 5px solid $borde;
+        border-radius: 20px;
+    }
+}
+
+
+
