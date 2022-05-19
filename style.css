@@ -7,6 +7,7 @@ body {
   text-align: center;
   background: #212529;
   color: #fff;
+  padding: 10px 0px;
 }
 
 .grid-container {
@@ -53,17 +54,17 @@ body {
 }
 
 .grid-main-text {
-  border: solid #000000;
-  border-radius: 50px;
-  background-color: #424242;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  border: solid #000000;
+  border-radius: 50px;
   line-height: 2;
   font-family: 'Fredoka', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #000000;
+  background-color: #424342;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -100,16 +101,16 @@ header .head {
           align-items: center;
 }
 
-header img {
+header .head img {
   height: 100px;
   width: 100px;
 }
 
-header h1 {
+header .head h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 footer {
@@ -138,16 +139,18 @@ footer .foot {
 }
 
 .salon-text {
+  text-align: center;
   border: solid #000000;
-	border-radius: 50px;
+  border-radius: 50px;
   line-height: 2;
   font-family: 'Fredoka', sans-serif;
   font-size: 1.3rem;
   text-align: center;
   color: #000000;
-	background-color: #424242;
-  justify-content: center;
-  
+  background-color: #424342;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .salon-text h2 {
@@ -173,7 +176,7 @@ footer .foot {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
@@ -247,7 +250,20 @@ footer .foot {
 }
 
 @media screen and (max-width: 991px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+  }
   header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -297,7 +313,7 @@ footer .foot {
     width: 100%;
     height: 100%;
     -o-object-fit: none;
-      object-fit: none;
+       object-fit: none;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
   }
@@ -314,12 +330,21 @@ footer .foot {
 }
 
 .ubi-main .ubi-texto {
+  border: solid #000000;
+  border-radius: 50px;
+  line-height: 2;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000000;
+  background-color: #424342;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px 10px;
   width: 48%;
-  font-size: 1.1rem;
   background-color: #424242;
   border: 5px solid #000000;
-  color: #000000;
   border-radius: 20px;
 }
 
@@ -344,24 +369,58 @@ footer .foot {
 }
 
 .mapa .mapa-if {
-  border: 5px solid rgba(68, 68, 68, 0.637);
+  border: 5px solid #000000;
   border-radius: 20px;
 }
 
 /* RESPONSIVE UBICACION */
-
 @media screen and (max-width: 991px) {
   .ubi-main {
-    display: inline-block;
+    display: inline;
   }
   .ubi-main .ubi-texto {
-    width: 95%;
+    width: 100%;
   }
-  .ubi-img {
-    width: 95%;
+  .ubi-main .ubi-img {
+    width: 100%;
   }
-  .mapa {
-    width: 95%;
+  .ubi-main .ubi-img img {
+    width: 100%;
   }
-
 }
+
+/* CONTACTO */
+.form-contacto {
+  border: solid #000000;
+  border-radius: 50px;
+  line-height: 2;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000000;
+  background-color: #424342;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.form-contacto form input {
+  width: 75%;
+}
+
+.form-contacto form textarea {
+  width: 75%;
+}
+
+/* RESPONSIVE CONTACTO */
+@media screen and (max-width: 991px) {
+  .form-contacto {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
